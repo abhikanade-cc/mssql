@@ -1,7 +1,7 @@
 app:
     name: MSSQL
     code: mssql
-    notify: appzdev@cloudbourne.co
+    notify: akanade@ecloudcontrol.com
 
 build:
     version: 2017.2
@@ -11,7 +11,7 @@ build:
     image_template: mssql-2017
 
 deploy:
-    context: alpha/DEV
+    context: abhikanade-cc/DEV
     type: statefulset
     replicas: 1
     port:
@@ -34,4 +34,4 @@ properties:
       vault: DB_USER_PASS
     DB_NAME: CLOUDCONTROL
     DB_USER_NAME: appzuser  
-    revision : 12
+    revision : 11
